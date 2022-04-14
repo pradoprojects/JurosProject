@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Financing Simulator</title>
+  </head>
+  <body>
+    <h1>Financing Simulator</h1>
+    <form>
+      <label
+        >Value
+        <input id="value" type="number" value="200000" />
+      </label>
+      <label
+        >Term in Years
+        <input id="termyear" type="number" value="20" />
+      </label>
+      <label
+        >Interest per year
+        <input id="interestyear" type="number" value="0.08" />
+      </label>
+      <button type="button" onclick="simulate()">Simulate</button>
+    </form>
+
+    <h2>Results</h2>
+    <label>
+      Term in months
+      <input id="termmonth" type="number" value="100" readonly />
+    </label>
+
+    <label>
+      Interest per months
+      <input id="interestmonth" type="number" value="100" readonly />
+    </label>
+
+    <label>
+      Total Interest
+      <input id="totalinterest" type="number" value="100" readonly />
+    </label>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Installment</th>
+          <th>Amortization</th>
+          <th>Interest</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="simulator.js"></script>
+  </body>
+</html>
